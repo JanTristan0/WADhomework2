@@ -309,18 +309,25 @@ textarea {
 }
 
 /* Homework 2: JavaScriptiga loodud postituste autor ja profiili rippmenüü. */
+
+/*dropdown asetseb õiges kohas*/
 .main-nav {
   position: relative;
 }
 
+/*autori nime fondi suurus*/
 .post-author {
   font-size: 0.95rem;
 }
 
+
+/*selle klassi peidetud elemente ei kuvata*/
 .profile-menu[hidden] {
   display: none;
 }
 
+
+/*dropdown menüü kujundus*/
 .profile-menu {
   position: absolute;
   top: calc(100% + 0.45rem);
@@ -337,11 +344,13 @@ textarea {
   gap: 0.65rem;
 }
 
+/*valitakse kõik descendant elemendid*/
 .profile-menu p {
   margin: 0;
   overflow-wrap: anywhere;
 }
 
+/*profiilinimi bold*/
 .profile-name {
   font-weight: bold;
 }
@@ -351,6 +360,7 @@ textarea {
   font-size: 0.9rem;
 }
 
+/*descendant selectorid*/
 .main-nav .profile-menu .logout-link {
   padding: 0.6rem 0.75rem;
   background: #f3f4f6;
@@ -358,6 +368,7 @@ textarea {
   text-align: center;
 }
 
+/*javascripti abil muudab nupu stiili*/
 .like-button[aria-pressed="true"] {
   background: #fee2e2;
   color: #991b1b;
