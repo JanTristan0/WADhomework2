@@ -63,7 +63,7 @@ async function loadPosts() {
     // TASK 4: Online-allikas. Testimiseks eemalda järgmise rea eest //
     // ja kommenteeri ajutiselt allolev kohalik fetch välja.
     // See avalik URL töötab pärast GitHub Pagesi kasutuselevõttu.
-    // const response = await fetch("https://JanTristan0.github.io/WADhomework2/posts.json");
+    // const response = await fetch("https://gist.githubusercontent.com/JanTristan0/50ae98d9c355831b31fe215e13607ac2/raw/b094c489fcf4a9dc0acaf14af854f4baa38a8e9a/posts.json");
 
     // TASK 5: Kasutame nüüd projekti sees olevat kohalikku JSON-faili.
     const response = await fetch("./posts.json");
