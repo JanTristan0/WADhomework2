@@ -307,3 +307,58 @@ textarea {
     padding-top: 1rem;
   }
 }
+
+/* Homework 2: JavaScriptiga loodud postituste autor ja profiili rippmenüü. */
+.main-nav {
+  position: relative;
+}
+
+.post-author {
+  font-size: 0.95rem;
+}
+
+.profile-menu[hidden] {
+  display: none;
+}
+
+.profile-menu {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  right: 0;
+  z-index: 10;
+  width: min(260px, calc(100vw - 2rem));
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid #c7c9cc;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 15%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.profile-menu p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-email {
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.main-nav .profile-menu .logout-link {
+  padding: 0.6rem 0.75rem;
+  background: #f3f4f6;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.like-button[aria-pressed="true"] {
+  background: #fee2e2;
+  color: #991b1b;
+}
