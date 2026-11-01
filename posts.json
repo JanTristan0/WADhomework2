@@ -19,7 +19,7 @@
     "id": 3,
     "author": "Liisa",
     "createdAt": "2026-10-02",
-    "text": "Study session in the library. Homework #1 is almost finished!",
+    "text": "Study session in the library. Homework #2 is almost finished!",
     "image": "images/study.jpg",
     "imageAlt": "Picture of studying in a library"
   },
@@ -60,7 +60,7 @@
     "author": "Mia",
     "createdAt": "2026-09-27",
     "text": "Working on our group assignment in the library today.",
-    "image": "images/study.jpg",
+    "image": "images/study2.jpg",
     "imageAlt": "Books and study notes"
   },
   {
@@ -76,7 +76,7 @@
     "author": "Laura",
     "createdAt": "2026-09-25",
     "text": "Taking a coffee break after fixing the last CSS problem.",
-    "image": "images/coffee.jpg",
+    "image": "images/coffee2.jpg",
     "imageAlt": "Coffee and a laptop"
   }
 ]
