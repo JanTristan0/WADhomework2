@@ -1,0 +1,309 @@
+
+* { /*kehtib kõikidele html-i elementidele*/
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+body {
+  min-height: 100vh;          /*body kõrgus on terve ekraan*/          
+  margin: 0;
+  display: flex;            /*flexbox*/              
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%; /*pildi max laius on 100% selle containeri laiusest*/
+  display: block;   /*pilt on nüüd block level element*/
+}
+
+button,
+input,
+textarea {
+  font: inherit; /*font saadakse ülemelemendilt*/
+}
+
+.site-header {
+  width: min(100% - 2rem, 900px);
+  margin: 1rem auto 0;
+}
+
+.main-nav {
+  min-height: 58px;
+  padding: 0.4rem;
+  border-radius: 14px;
+  background: #c7c9cc;
+  display: flex;          
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.main-nav a {
+  color: #111827;
+  text-decoration: none;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  background: #4b5563;
+  color: #ffffff;
+}
+
+.main-nav a[aria-current="page"] {
+  background: #6b7280;
+  color: #ffffff;
+}
+
+.main-nav .profile-link {
+  margin-left: auto;
+  padding: 0.25rem;
+}
+
+.profile-link img {
+  width: 44px;
+  height: 44px;
+}
+
+
+.page-shell {
+  width: min(100% - 2rem, 900px);
+  margin: 1rem auto;
+  flex: 1;
+}
+
+.feed-layout {
+  display: flex;              
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.side-panel {
+  flex: 0 0 150px;
+  min-height: 420px;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.posts {
+  flex: 1 1 520px;
+  display: flex;            
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.post {
+  background: #d8dadd;
+  border-radius: 14px;
+  padding: 0.8rem;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.post > header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.post > header time {
+  margin-left: auto;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.mini-avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.post-photo {
+  width: 100%;
+  max-height: 330px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.post p {
+  line-height: 1.5;
+  margin: 0.8rem 0;
+}
+
+.like-button {
+  border: 0;
+  border-radius: 8px;
+  padding: 0.45rem 0.7rem;
+  background: #eef2ff;
+  color: #1e3a8a;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  background: #dbeafe;
+}
+
+.centered-page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+
+.form-card {
+  width: min(100%, 430px);
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #d8dadd;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 10%);
+}
+
+.form-card h1 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+.form-card form {
+  display: flex;            
+  flex-direction: column;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-field + .form-field {
+  margin-top: 1rem;
+}
+
+.form-field textarea,
+.form-field input[type="email"],
+.form-field input[type="password"] {
+  width: 100%;
+  border: 1px solid #b9bec6;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 0.75rem;
+}
+
+.form-field input[type="file"] {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+
+.form-note {
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.form-field ~ .form-actions {
+  margin-top: 1.25rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.primary-button {
+  border: 0;
+  border-radius: 8px;
+  background: #1f4f82;
+  color: #ffffff;
+  padding: 0.7rem 1.1rem;
+  cursor: pointer;
+}
+
+.primary-button:hover,
+.primary-button:focus-visible {
+  background: #163b63;
+}
+
+.login-card {
+  text-align: center;
+}
+
+.login-card form {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.secondary-link {
+  color: #0284c7;
+  text-decoration: none;
+}
+
+.secondary-link:hover {
+  text-decoration: underline;
+}
+
+.or-text {
+  margin-bottom: 0.2rem;
+}
+
+.or-text::before,
+.or-text::after {
+  content: " — ";
+  color: #6b7280;
+}
+
+.site-footer {
+  width: min(100% - 2rem, 900px);
+  margin: 0 auto 1rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #c7c9cc;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .site-header,
+  .page-shell,
+  .site-footer {
+    width: min(100% - 1rem, 900px);
+  }
+
+  .main-nav {
+    min-height: 52px;
+  }
+
+  .main-nav a {
+    padding: 0.7rem 0.8rem;
+  }
+
+  .feed-layout {
+    flex-direction: column;
+  }
+
+  .side-panel {
+    display: none;
+  }
+
+  .posts {
+    flex-basis: auto;
+  }
+
+  .centered-page {
+    padding-top: 1rem;
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- leht sobivaks ka telole, üldiselt ka skaleeruv, kui brauseri suurust muudad -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PostIt - Add Post</title>
+
+  <!-- ühendab addposti faili styles.css failiga -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- lehe header; navigatsiooniriba; avalehele viimise nupp; add posti nupp (aria current
+  näitab, et leht hetkel aktiivne); profiilipildi nupp kust läheb login lehele; profiilipilt -->
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="addPost.html" aria-current="page">Add Post</a>
+      <a class="profile-link" href="login.html" aria-label="Open login page">
+        <img src="images/avatar.jpg" alt="Profile">
+      </a>
+    </nav>
+  </header>
+
+  <!-- uue postituse tegemise ala ja selle pealkiri -->
+  <main class="page-shell centered-page">
+    <section class="form-card" aria-labelledby="add-post-title">
+      <h1 id="add-post-title">Create a post</h1>
+
+      <!-- pärast vormi saatmist tagasi index.htmli; teksti sisestamise väli ja pealkiri;
+      tekstikasti suurus, algne tekst sees ja required tähendab, et väli peab täidetud olema-->
+      <form action="index.html" method="get">
+        <label class="form-field">
+          <span>Post body</span>
+          <textarea name="postBody" rows="6" placeholder="Write your post..." required></textarea>
+        </label>
+
+        <!-- faili/pildi valimise väli; tekst selle sees; type="file" laseb
+        kasutajal faili valida ning accept=image lubab valida pildifaile -->
+        <label class="form-field">
+          <span>Select file</span>
+          <input type="file" name="postImage" accept="image/*">
+        </label>
+
+        <!-- selgitab, et pilt ei ole kohustuslik -->
+        <p class="form-note">The image is optional.</p>
+
+        <!-- nupu sektsioon; type="submit" pmst peaks ss postituse üles laadima, praegu ei tee seda; varasemalt olnud 
+        action="index.html" viib kasutaja avalehele. -->
+        <section class="form-actions" aria-label="Form actions">
+          <button class="primary-button" type="submit">Create post</button>
+        </section>
+      </form>
+    </section>
+  </main>
+
+  <!-- lehe alumine osa ehk footer ja selle tekst -->
+  <footer class="site-footer">
+    <p>Footer</p>
+  </footer>
+</body>
+</html>

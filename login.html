@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- muudab lehe sobivaks ka telefonile-->
+  <title>PostIt - Login</title>
+  <!--tekst mida näeme brauseris -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Main navigation">
+      <!--navigatsioonimenüü, label kirjeldab otstarvet -->
+      <a href="index.html">Home</a>
+      <!-- link avalehele-->
+      <a href="addPost.html">Add Post</a>
+      <!--link uue postituse lisamiseks -->
+      <a class="profile-link" href="login.html" aria-current="page" aria-label="Current login page">
+        <!-- link viitab sisselogimise lehele, current"page" näitab et oleme sellel lehel -->
+        <img src="images/avatar.jpg" alt="Profile">
+        <!-- näitab profiilipilti, src on asukoht ja alt kirjeldab pilti-->
+      </a>
+    </nav>
+  </header>
+
+  <main class="page-shell centered-page">
+    <!-- lehe põhisisu, centered-page aitab cssi abil sisu keskele paigutada -->
+    <section class="form-card login-card" aria-labelledby="login-title">
+      <!-- sisselogimise vormi ümbritsev osa-->
+      <h1 id="login-title">Welcome to PostIt</h1>
+      <!-- lehe peamine pealkiri, id võimaldab sellele elemendile teistest kohtadest diidata-->
+      <a class="secondary-link" href="#create-account">Create an account</a>
+      <!-- link konto loomise juurde, #create account viitab samal lehel elemendile mille id oleks create account-->
+      <p class="or-text">or</p>
+      <p>Please log in</p>
+
+      <form action="index.html" method="get">
+        <!-- action suunab avalehele, method get saadab vormi andmed URl-i kaudu-->
+        <label class="form-field">
+          <span>Email</span>
+          <input type="email" name="email" placeholder="Email" required>
+          <!-- emaili sisestusväli, placeholder näitab emaili kirjet väljal, required et väli ei jää tühjaks-->
+        </label>
+
+        <label class="form-field">
+          <span>Password</span>
+          <!--parooli välja nimetus -->
+          <input type="password" name="password" placeholder="Password" required minlength="1">
+          <!-- parooli sisestusväli, type="password" peidab sisestatud tähemärgid, 
+          required ei luba välja tühjaks jätta ning minlength 1 nõuab 1te tähemärki-->
+        </label>
+
+        <section class="form-actions" aria-label="Form actions">
+          <!-- grupeerib vormi tegevused-->
+          <button class="primary-button" type="submit">Log in</button>
+          <!-- nupp saadam vormi ja pärast saatmist suunatakse kasutaja index.htmli -->
+        </section>
+      </form>
+
+      <a class="secondary-link" href="#forgot-password">Forget password</a>
+      <!-- link unustatud parooli juurde-->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Footer</p>
+  </footer>
+</body>
+</html>
