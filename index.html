@@ -6,6 +6,7 @@
   <!--muudab lehe sobivaks ka telefoniekraanile -->
   <title>PostIt - Home</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
   <!--ühendab html faili css failiga -->
 </head>
 <body>
@@ -20,6 +21,12 @@
         <img src="images/avatar.jpg" alt="Profile">
         <!--img näitab pilti, src näitab asukohta kus see asub, alt on pildi kirjeldusm kui seda ei saa laadida -->
       </a>
+      <!-- Profiilimenüü avaneb ja sulgub profiilipildile vajutades. -->
+      <section class="profile-menu" id="profile-menu" aria-label="User profile menu" hidden>
+        <p class="profile-name">Student</p>
+        <p class="profile-email">student@example.com</p>
+        <a href="login.html" class="logout-link">Log out</a>
+      </section>
     </nav>
   </header>
 
@@ -31,66 +38,19 @@
         <p>PostIt</p>
       </aside>
 
-      <section class="posts" aria-label="All posts">
-        <article class="post">
-          <header>
-            <img class="mini-avatar" src="images/avatar.jpg" alt="User avatar">
-                      <!-- kasutaja profiilipilt -->
-            <time datetime="2026-10-04">Oct 4, 2026</time>
-            <!-- näitab kuupäeva, datetime annab kuupäeva õiges vormis-->
-          </header>
-          <img class="post-photo" src="images/tartu.jpg" alt="Picture of autumn Tartu">
-          <!-- postituse juurde kuuluv pilt-->
-          <p>Walking through Tartu after class. Beautiful autumn afternoon!</p>
-  
-          <button class="like-button" type="button" aria-label="Like this post">♡ Like</button>
-                    <!-- "like" nupp, type="button" tähendab et nupp ei saada vormi-->
-
-        </article>
-
-        <article class="post">
-          <!--teine postitus-->
-          <header>
-            <img class="mini-avatar" src="images/avatar.jpg" alt="User avatar">
-            <time datetime="2026-10-03">Oct 3, 2026</time>
-          </header>
-          <p>Does anyone know which room the lab is in today?</p>
-          <button class="like-button" type="button" aria-label="Like this post">♡ Like</button>
-        </article>
-
-        <article class="post">
-          <!--kolmas postitus-->
-          <header>
-            <img class="mini-avatar" src="images/avatar.jpg" alt="User avatar">
-            <time datetime="2026-10-02">Oct 2, 2026</time>
-          </header>
-          <img class="post-photo" src="images/study.jpg" alt="Picture of studying in a library">
-          <p>Study session in the library. Homework #1 is almost finished!</p>
-          <button class="like-button" type="button" aria-label="Like this post">♡ Like</button>
-        </article>
-
-        <article class="post">
-          <!--neljas postitus-->
-          <header>
-            <img class="mini-avatar" src="images/avatar.jpg" alt="User avatar">
-            <time datetime="2026-10-01">Oct 1, 2026</time>
-          </header>
-          <p>Reminder: commit your work and push it to GitHub before the deadline.</p>
-          <button class="like-button" type="button" aria-label="Like this post">♡ Like</button>
-        </article>
-
-        <article class="post">
-                    <!--viies postitus-->
-          <header>
-            <img class="mini-avatar" src="images/avatar.jpg" alt="User avatar">
-            <time datetime="2026-09-30">Sep 30, 2026</time>
-          </header>
-          <img class="post-photo" src="images/coffee.jpg" alt="Picture of a coffee cup and laptop">
-          <p>Coffee + HTML + CSS = a productive evening.</p>
-          <button class="like-button" type="button" aria-label="Like this post">♡ Like</button>
-        </article>
+      <section class="posts" aria-label="All posts" id="posts-container">
+        <p id="posts-status">Loading posts...</p>
+        <!-- JSON-ist loodud postitused lisab script.js siia automaatselt. -->
+<!-- kasutaja profiilipilt -->
+<!-- näitab kuupäeva, datetime annab kuupäeva õiges vormis-->
+<!-- postituse juurde kuuluv pilt-->
+<!-- "like" nupp, type="button" tähendab et nupp ei saada vormi-->
+<!--teine postitus-->
+<!--kolmas postitus-->
+<!--neljas postitus-->
+<!--viies postitus-->
       </section>
-
+      
       <aside class="side-panel right-panel">
                   <!--parem külgpaneel-->
 
