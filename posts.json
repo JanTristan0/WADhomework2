@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "author": "Emma",
+    "createdAt": "2026-10-04",
+    "text": "Walking through Tartu after class. Beautiful autumn afternoon!",
+    "image": "images/tartu.jpg",
+    "imageAlt": "Picture of autumn Tartu"
+  },
+  {
+    "id": 2,
+    "author": "Martin",
+    "createdAt": "2026-10-03",
+    "text": "Does anyone know which room the lab is in today?",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 3,
+    "author": "Liisa",
+    "createdAt": "2026-10-02",
+    "text": "Study session in the library. Homework #1 is almost finished!",
+    "image": "images/study.jpg",
+    "imageAlt": "Picture of studying in a library"
+  },
+  {
+    "id": 4,
+    "author": "Karl",
+    "createdAt": "2026-10-01",
+    "text": "Reminder: commit your work and push it to GitHub before the deadline.",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 5,
+    "author": "Anna",
+    "createdAt": "2026-09-30",
+    "text": "Coffee + HTML + CSS = a productive evening.",
+    "image": "images/coffee.jpg",
+    "imageAlt": "Picture of a coffee cup and laptop"
+  },
+  {
+    "id": 6,
+    "author": "Sofia",
+    "createdAt": "2026-09-29",
+    "text": "Finally understood how CSS Flexbox works!",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 7,
+    "author": "Rasmus",
+    "createdAt": "2026-09-28",
+    "text": "Another nice walk in Tartu before the next lecture.",
+    "image": "images/tartu.jpg",
+    "imageAlt": "Autumn view of Tartu"
+  },
+  {
+    "id": 8,
+    "author": "Mia",
+    "createdAt": "2026-09-27",
+    "text": "Working on our group assignment in the library today.",
+    "image": "images/study.jpg",
+    "imageAlt": "Books and study notes"
+  },
+  {
+    "id": 9,
+    "author": "Oliver",
+    "createdAt": "2026-09-26",
+    "text": "Quick reminder: check the mobile layout too.",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 10,
+    "author": "Laura",
+    "createdAt": "2026-09-25",
+    "text": "Taking a coffee break after fixing the last CSS problem.",
+    "image": "images/coffee.jpg",
+    "imageAlt": "Coffee and a laptop"
+  }
+]
